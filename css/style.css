@@ -12,7 +12,7 @@
 }
 section {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
 }
 .flex {
   display: flex;
@@ -125,5 +125,87 @@ section {
 .circle-left {
   background: #017142;
   clip-path: circle(450px at left -270px);
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    padding: 20px;
+  }
+  .header .logo {
+    max-width: 60px;
+  }
+  .header ul {
+    display: none;
+  }
+  .content.flex {
+    flex-direction: column;
+  }
+  .content {
+    padding: 10px 80px;
+    min-height: 100vh;
+  }
+  .text-box h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .text-box {
+    max-width: 100%;
+  }
+  .img-box {
+    min-width: 100%;
+    justify-content: center;
+  }
+  .img-box img {
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+  }
+  .circle-right {
+    clip-path: circle(400px at center 795px);
+  }
+  .circle-left {
+    clip-path: circle(365px at left -260px);
+  }
+  .mini-tab {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+  }
+  .mini-tab li {
+    margin: 0 15px;
+  }
+  .icon {
+    background: #017143;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: -1;
+  }
 
 }
+
+@media screen and (max-width: 560px) {
+  .content {
+    padding: 10px 20px;
+  }
+  .text-box h2 {
+    font-size: 2em;
+  }
+  .img-box img {
+    width: 40%;
+    bottom: 75px;
+  }
+  .circle-right {
+    clip-path: circle(250px at center 795px);
+  }
+  .mini-tab li {
+    margin: 0 10px;
+  }
+  .mini-tab img {
+    width: 35px;
+  }
+} 
