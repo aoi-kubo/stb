@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="aoi kubo" />
+  <meta name="description" content="久保碧衣のポートフォリオ" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>King W Stone | starbucks</title>
+  <link rel="stylesheet" href="https://tomap.co/ZP_reset.css" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+</head>
+<body class="body">
+  <section>
+    <div class="circle-right"></div>
+    <div class="circle-left"></div>
+  <header class="header flex">
+    <h1><a href="index.html"><img src="./img/logo.png" alt="ロゴの写真" class="logo"></a></h1>
+    <ul class="flex">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">What's New</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+    <div class="content flex">
+      <div class="text-box">
+        <h2>
+          It's not just Coffee.<br>
+          It's <span>Starbucks</span>.
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam hic soluta ratione nulla, reiciendis consectetur, corporis voluptatem nesciunt quibusdam nemo eveniet officiis incidunt in id.
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="img-box">
+        <img src="./img/matcha.png" class="frapp" alt="">
+      </div>
+      <ul class="mini-tab flex">
+        <li><img src="./img/matcha.png" onclick="imgSlider('./img/matcha.png');changeCircleColor('#619435')" alt=""></li>
+        <li><img src="./img/espresso.png" onclick="imgSlider('./img/espresso.png');changeCircleColor('#b76124')" alt=""></li>
+        <li><img src="./img/peach.png" onclick="imgSlider('./img/peach.png');changeCircleColor('#f8c2b5')" alt=""></li>
+        <li><img src="./img/sweetpotato.png" onclick="imgSlider('./img/sweetpotato.png');changeCircleColor('#d2a159')" alt=""></li>
+        <li><img src="./img/sakura.png" onclick="imgSlider('./img/sakura.png');changeCircleColor('#e8c8c9')" alt=""></li>
+        <li><img src="./img/pistachio.png" onclick="imgSlider('./img/pistachio.png');changeCircleColor('#c6cb87')" alt=""></li>
+
+        
+
+      </ul>
+      <ul class="icon flex">
+        <li><a href="#"><img src="./img/facebook.png" alt="フェイスブックのアイコン"></a></li>
+        <li><a href="#"><img src="./img/twitter.png" alt="フェイスブックのアイコン"></a></li>
+        <li><a href="#"><img src="./img/instagram.png" alt="インスタグラムのアイコン"></a></li>
+      </ul> 
+    </div>
+  </section>
+
+
+  <script type="text/javascript">
+    function imgSlider(photo) {
+      document.querySelector(".frapp").src = photo;
+    }
+    function changeCircleColor(color) {
+      const circle = document.querySelector(".circle-right");
+      circle.style.background = color;
+    }
+  </script>
+</body>
+</html>

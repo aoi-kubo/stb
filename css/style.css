@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; 
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+}
+section {
+  position: relative;
+  min-height: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 100px 15px;
+  box-sizing: border-box; 
+  width: 100%;
+}
+.header .logo {
+  width: 80px;
+  filter: invert(0);
+}
+.header ul li a {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  max-height: 100vh;
+  box-sizing: border-box;
+  padding: 10px 100px;
+}
+
+.text-box {
+  padding-bottom: 50px;
+  max-width: 550px;
+}
+.text-box h2 {
+  font-size: 3.5em;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+.text-box span {
+  color: #017143;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.text-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #017143;
+  color: #fff;
+  border-radius: 40px;
+  letter-spacing: 1px;
+}
+
+.img-box {
+  max-width: 340px;
+  justify-content: flex-end;
+  padding-right: 40px;
+  position: relative;
+}
+
+.img-box img {
+  width: 90%;
+  transform: rotate( -12deg );
+}
+
+.mini-tab {
+  position: absolute;
+  left: 30%;
+  bottom: 25px;
+  transform: translateX(-50%);
+}
+.mini-tab li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.mini-tab li:hover {
+  transform: translateY(-15px);
+}
+.mini-tab img {
+  max-width: 50px;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-60%);
+  flex-direction: column;
+}
+.icon li a{
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+.circle-right, .circle-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-right {
+  background: #619435;
+  clip-path: circle(500px at right 690px);
+}
+.circle-left {
+  background: #017142;
+  clip-path: circle(450px at left -270px);
+
+}
